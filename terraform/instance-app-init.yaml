@@ -1,0 +1,5 @@
+#cloud-config
+runcmd:
+  - amazon-linux-extras install docker
+  - service docker start
+  - systemctl enable docker
