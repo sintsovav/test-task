@@ -1,5 +1,5 @@
 resource "aws_security_group" "whitelist_sg" {
-  name        = "whitelist_sg"
+  name        = var.sg
   description = "Allow only traffic between provisioner and app nodes"
   vpc_id      = aws_vpc.flask-app-test-vpc.id
 

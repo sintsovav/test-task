@@ -1,5 +1,5 @@
 resource "aws_ecr_repository" "test-task-repo-private" {
-  name                 = "test-task-repo-private"
+  name                 = var.ecr
   image_tag_mutability = "MUTABLE"
 }
 
